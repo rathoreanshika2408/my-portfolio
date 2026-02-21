@@ -1446,7 +1446,7 @@ function Projects({ darkMode }) {
 
   const PROJECTS_WITH_LINKS = [
     { ...PROJECTS[0], liveLink: "https://your-live-link-1.com", githubLink: "https://github.com/rathoreanshika2408/project1" },
-    { ...PROJECTS[1], liveLink: "https://your-live-link-2.com", githubLink: "https://github.com/rathoreanshika2408/project2" },
+    { ...PROJECTS[1], liveLink: "https://anshikarathore-portfolio.netlify.app/", githubLink: "https://github.com/rathoreanshika2408/my-portfolio" },
     { ...PROJECTS[2], liveLink: "https://rathoreanshika2408.github.io/my-shop/", githubLink: "https://github.com/rathoreanshika2408/my-shop" },
   ];
 
