@@ -1331,7 +1331,7 @@ function Skills({ darkMode }) {
 
       <div style={{color:"#458B73",fontSize:"0.85rem",fontWeight:600,letterSpacing:"0.1em",textTransform:"uppercase",marginBottom:"0.5rem",position:"relative",zIndex:10}}>// skills</div>
       <h2 style={{fontFamily:"'Syne',sans-serif",fontSize:"clamp(2rem,4vw,3rem)",fontWeight:800,marginBottom:"0.5rem",color:darkMode?"#E8EAED":"#1F1135",position:"relative",zIndex:10}}>My Toolkit</h2>
-      <p style={{color:darkMode?"#9CA3AF":"#6B7280",marginBottom:"3.5rem",fontSize:"1rem",position:"relative",zIndex:10}}>Hover a group to explore the stack 🧰</p>
+      <p style={{color:darkMode?"#9CA3AF":"#6B7280",marginBottom:"3.5rem",fontSize:"1rem",position:"relative",zIndex:10}}></p>
 
       <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fill,minmax(280px,1fr))",gap:"2rem",position:"relative",zIndex:5}}>
         {groups.map((group) => (
@@ -1660,7 +1660,7 @@ function Projects({ darkMode }) {
         <div style={{ display: "flex", alignItems: "flex-end", justifyContent: "space-between", flexWrap: "wrap", gap: "1rem" }}>
           <div>
             <h2 style={{ fontFamily: "'Syne',sans-serif", fontSize: "clamp(2rem,4vw,3rem)", fontWeight: 800, marginBottom: "0.3rem", color: darkMode ? "#E8EAED" : "#1F1135" }}>Things I've Built</h2>
-            <p style={{ color: darkMode ? "#9CA3AF" : "#6B7280", fontSize: "0.92rem" }}>Scroll · Swipe · or use arrows ✦</p>
+            <p style={{ color: darkMode ? "#9CA3AF" : "#6B7280", fontSize: "0.92rem" }}></p>
           </div>
           <div style={{ display: "flex", gap: "0.8rem" }}>
             <button onClick={goPrev} className="proj-nav-btn" style={{
@@ -1995,8 +1995,8 @@ function Contact({ darkMode }) {
 
       <div style={{position:"relative",zIndex:1}}>
         <div style={{color:"#7C3AED",fontSize:"0.85rem",fontWeight:600,letterSpacing:"0.1em",textTransform:"uppercase",marginBottom:"0.5rem"}}>// contact</div>
-        <h2 style={{fontFamily:"'Syne',sans-serif",fontSize:"clamp(2rem,4vw,3rem)",fontWeight:800,marginBottom:"1rem",color:darkMode?"#E8EAED":"#1F1135"}}>Let's Talk! 💬</h2>
-<p style={{color:darkMode?"#B8BCC8":"#1F1135",marginBottom:"3rem",maxWidth:500,lineHeight:1.7,fontWeight:600}}>Have an idea, opportunity, or just want to say hi? My inbox is always open ✨</p>
+        <h2 style={{fontFamily:"'Syne',sans-serif",fontSize:"clamp(2rem,4vw,3rem)",fontWeight:800,marginBottom:"1rem",color:darkMode?"#E8EAED":"#1F1135"}}>Let's Talk!</h2>
+<p style={{color:darkMode?"#B8BCC8":"#1F1135",marginBottom:"3rem",maxWidth:500,lineHeight:1.7,fontWeight:600,textAlign:"center", margin:"0 auto 3rem auto"}}>Have an idea, opportunity, or just want to say hi? My inbox is always open! </p>
         
         <div style={{display:"grid",gridTemplateColumns:"1fr 1.3fr",gap:"2rem",alignItems:"start"}}>
           
