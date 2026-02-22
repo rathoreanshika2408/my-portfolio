@@ -453,7 +453,7 @@ function Hero({ darkMode, setDarkMode }) {
   );
 
   return (
-    <section id="home" style={{minHeight:"100vh",display:"flex",alignItems:"center",justifyContent:"space-between",padding:"8rem 5% 4rem",position:"relative",overflow:"hidden",gap:"2rem"}}>
+    <section id="home" style={{minHeight:"100vh",display:"flex",alignItems:"center",justifyContent:"space-between",padding:"8rem 5% 4rem",position:"relative",overflow:"hidden",gap:"2rem",flexDirection: window.innerWidth < 768 ? "column" : "row"}}>
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Syne:wght@700;800&family=Playfair+Display:wght@700;800;900&display=swap');
 
@@ -859,7 +859,7 @@ useEffect(() => {
         {/* Bento Grid */}
         <div style={{
           display:"grid",
-          gridTemplateColumns:"repeat(12, 1fr)",
+          gridTemplateColumns: window.innerWidth < 768 ? "1fr" : "repeat(12, 1fr)",
           gap:"1rem",
           marginBottom:"2rem"
         }}>
@@ -1684,7 +1684,7 @@ function Projects({ darkMode }) {
       </div>
 
       {/* MAIN LAYOUT */}
-      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "4rem", alignItems: "center", position: "relative", zIndex: 2 }}>
+      <div style={{ display: "grid", gridTemplateColumns: window.innerWidth < 768 ? "1fr" : "1fr 1fr", gap: "4rem", alignItems: "center", position: "relative", zIndex: 2 }}>
 
         {/* LEFT — Stacked card deck */}
         <div style={{ position: "relative", height: 460 }}>
@@ -1998,7 +1998,7 @@ function Contact({ darkMode }) {
         <h2 style={{fontFamily:"'Syne',sans-serif",fontSize:"clamp(2rem,4vw,3rem)",fontWeight:800,marginBottom:"1rem",color:darkMode?"#E8EAED":"#1F1135"}}>Let's Talk!</h2>
 <p style={{color:darkMode?"#B8BCC8":"#1F1135",marginBottom:"3rem",maxWidth:500,lineHeight:1.7,fontWeight:600,textAlign:"center", margin:"0 auto 3rem auto"}}>Have an idea, opportunity, or just want to say hi? My inbox is always open! </p>
         
-        <div style={{display:"grid",gridTemplateColumns:"1fr 1.3fr",gap:"2rem",alignItems:"start"}}>
+        <div style={{display:"grid",gridTemplateColumns: window.innerWidth < 768 ? "1fr" : "1fr 1.3fr",gap:"2rem",alignItems:"start"}}>
           
           {/* Left Side - Contact Info Cards */}
 
